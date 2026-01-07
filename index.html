@@ -1,0 +1,79 @@
+
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRVXON | Luxury Financial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --gold: #D4AF37;
+        --gold-light: #F9DE81;
+        --anthracite: #0A0A0A;
+        --charcoal: #121212;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #050505;
+        color: #E5E5E5;
+        overflow-x: hidden;
+      }
+      h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .font-serif-luxury {
+        font-family: 'Playfair Display', serif;
+      }
+      .text-gold { color: #D4AF37; }
+      .bg-gold { background-color: #D4AF37; }
+      .border-gold { border-color: #D4AF37; }
+      .gold-gradient {
+        background: linear-gradient(135deg, #D4AF37 0%, #F9DE81 50%, #D4AF37 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gold-bg-gradient {
+        background: linear-gradient(135deg, #D4AF37 0%, #F9DE81 50%, #D4AF37 100%);
+      }
+      .glass {
+        background: rgba(18, 18, 18, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+      .noise {
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+        opacity: 0.05;
+        pointer-events: none;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="noise fixed inset-0 z-0"></div>
+    <div id="root" class="relative z-10"></div>
+  </body>
+</html>
